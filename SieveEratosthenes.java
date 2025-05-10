@@ -17,7 +17,7 @@ public class SieveEratosthenes {
             arr[i] = value;
             value++;
         }
-        for (i = 0; i < num - 1; i++) {
+        for (i = 0; i < (int) Math.sqrt(num - 1); i++) {
             if (arr[i] == 0)
                 continue;
 
