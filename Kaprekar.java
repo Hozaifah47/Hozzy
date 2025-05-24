@@ -37,7 +37,7 @@ class kaprekar {
         return des - asc;
     }
 
-    public static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n, temp, i = 1;
         System.out.println("enter a 4 digit number");
