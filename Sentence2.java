@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class sentence2 {
+public class Sentence2 {
     public static void main(String[] args) {
-        String s1, even = "", odd = "", word;
+        String s1, even = "", odd = "";
         int pos, start = 0, count = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a sentence:");
