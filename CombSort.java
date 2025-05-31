@@ -3,7 +3,7 @@ import java.util.*;
 class CombSort {
     public static void main(String[] args) {
 
-        int size, gap, i;
+        int size, gap, i, temp;
         boolean check = true;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array :");
@@ -24,7 +24,7 @@ class CombSort {
             check = false;
             for (i = 0; i + gap < arr.length; i++) {
                 if (arr[i] > arr[i + gap]) {
-                    int temp = arr[i];
+                    temp = arr[i];
                     arr[i] = arr[i + gap];
                     arr[i + gap] = temp;
                     check = true;
