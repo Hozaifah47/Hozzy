@@ -4,10 +4,12 @@ class DateRange {
     public static void main(String args[]) {
         int[] date1 = new int[4];
         int[] date2 = new int[4];
-        int[] month=new int[12];
+        int[] month = new int[12];
+        int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the range of the 1st date");
-        System.out.println("Enter the month");
+        System.out.println("Enter the day");
         date1[0] = sc.nextInt();
         if (date1[0] < 1 || date1[0] > 31) {
             System.out.println("Invalid Input !");
@@ -62,9 +64,6 @@ class DateRange {
             System.out.println("Invalid Input !");
             return;
         }
-        for(i=0;i<12
-        
-        )
 
     }
 

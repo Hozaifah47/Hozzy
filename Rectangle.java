@@ -6,6 +6,7 @@ public class Rectangle {
         int rect1[] = new int[8];
         int rect2[] = new int[8];
         int i;
+        boolean flag = false;
         Scanner sc = new Scanner(System.in);
         for (i = 0; i < 8; i++) {
             if (i % 2 == 0) {
@@ -19,18 +20,44 @@ public class Rectangle {
         }
         for (i = 0; i < 8; i++) {
             if (i % 2 == 0) {
-                System.out.println("Enter the X coordinate of the 1st rectangle (count : edge " + (i / 2 + 1) + ")");
+                System.out.println("Enter the X coordinate of the 2nd rectangle (count : edge " + (i / 2 + 1) + ")");
                 rect2[i] = sc.nextInt();
             } else {
-                System.out.println("Enter the Y coordinate of the 1st rectangle (count : edge " + (i / 2 + 1) + ")");
+                System.out.println("Enter the Y coordinate of the 2nd rectangle (count : edge " + (i / 2 + 1) + ")");
                 rect2[i] = sc.nextInt();
             }
 
         }
+        for (i = 0; i < 8; i++) {
+            if (i % 2 == 0) {
+                flag = checkPointInside(rect1[i], rect1[i + 1], rect2);
+                if (flag) {
+                    break;
+                }
+
+            }
+        }
+        if (flag == false) {
+            for (i = 0; i < 8; i++) {
+                if (i % 2 == 0) {
+                    flag = checkPointInside(rect2[i], rect2[i + 1], rect1);
+                    if (flag) {
+                        break;
+                    }
+
+                }
+            }
+
+        }
+        if (flag) {
+            System.out.println("Interscepting");
+        } else {
+            System.out.println("not interscepting");
+        }
 
     }
 
-    boolean checkPointInside(int x, int y, int[] rect) {
+    static boolean checkPointInside(int x, int y, int[] rect) {
 
         int minX, maxX, minY, maxY;
         minX = Math.min(Math.min(rect[0], rect[2]), Math.min(rect[4], rect[6]));
@@ -38,7 +65,7 @@ public class Rectangle {
         minY = Math.min(Math.min(rect[1], rect[3]), Math.min(rect[5], rect[7]));
         maxY = Math.max(Math.max(rect[1], rect[3]), Math.max(rect[5], rect[7]));
 
-        return x > minX && x < maxX && y > minY && y < maxY;
+        return (x > minX && x < maxX && y > minY && y <= maxY) || (x >= minX && x < maxX && y > minY && y < maxY);
 
     }
 }
