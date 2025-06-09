@@ -49,6 +49,9 @@ public class Rectangle {
             }
 
         }
+        if (checkCrossOverlap(rect1, rect2) || checkCrossOverlap(rect2, rect1)) {
+            flag = true;
+        }
         if (flag) {
             System.out.println("Interscepting");
         } else {
@@ -66,6 +69,26 @@ public class Rectangle {
         maxY = Math.max(Math.max(rect[1], rect[3]), Math.max(rect[5], rect[7]));
 
         return (x > minX && x < maxX && y > minY && y <= maxY) || (x >= minX && x < maxX && y > minY && y < maxY);
+
+    }
+
+    static boolean checkCrossOverlap(int[] rect1, int[] rect2) {
+        int maxX1, maxY1, maxX2, maxY2;
+        maxX1 = Math.min(Math.min(rect1[0], rect1[2]), Math.min(rect1[4], rect1[6]));
+        maxX2 = Math.min(Math.min(rect2[0], rect2[2]), Math.min(rect2[4], rect2[6]));
+        maxY1 = Math.max(Math.max(rect1[1], rect1[3]), Math.max(rect1[5], rect1[7]));
+        maxY2 = Math.max(Math.max(rect2[1], rect2[3]), Math.max(rect2[5], rect2[7]));
+
+        if (maxX1 > maxY1 || maxY2 > maxX2) {
+            if ((rect2[1] < rect1[1] && rect2[3] < rect1[3] && rect2[5] < rect1[5] && rect2[7] < rect1[7])
+                    && (rect2[0] > rect1[0] && rect2[6] > rect1[6] && rect2[2] < rect1[2] && rect2[4] < rect1[4])
+                    || (rect1[0] > rect2[0] && rect1[6] > rect2[6] && rect1[2] < rect2[2] && rect1[4] < rect2[4])) {
+                return true;
+
+            }
+
+        }
+        return false;
 
     }
 }
