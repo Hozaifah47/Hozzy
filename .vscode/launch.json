@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "DateHybrid",
+            "request": "launch",
+            "mainClass": "DateHybrid",
+            "projectName": "Hozzy_8a6d8245"
+        },
+        {
+            "type": "java",
+            "name": "dateintersect",
+            "request": "launch",
+            "mainClass": "dateintersect",
+            "projectName": "Hozzy_8a6d8245"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

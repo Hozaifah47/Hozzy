@@ -68,8 +68,4 @@ class DateRange {
 
     }
 
-    isDateOverlap(int date1[],int date2[]){
-        
-    }
-
 }
