@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Grid Boxes</title>
+<style>
+  body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px;
+    padding: 5px;
+    width: 431px; 
+    border: 3px solid black;
+    box-sizing: border-box;
+  }
+  .box {
+    background-color: yellow;
+    border: 3px solid gold;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-size: 3rem;
+   
+  }
+
+   .redbox{
+    background-color: yellow;
+    border: 3px solid red;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-size: 3rem;
+   }
+  
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" onclick="clickMe(event)">1</div>
+    <div class="box" onclick="clickMe(event)">2</div>
+    <div class="box" onclick="clickMe(event)">3</div>
+    <div class="box" onclick="clickMe(event)">4</div>
+
+    <div class="box" onclick="clickMe(event)">5</div>
+    <div class="box" onclick="clickMe(event)">6</div>
+    <div class="box" onclick="clickMe(event)">7</div>
+    <div class="box" onclick="clickMe(event)">8</div>
+
+    <div class="box" onclick="clickMe(event)">9</div>
+    <div class="box" onclick="clickMe(event)">10</div>
+    <div class="box" onclick="clickMe(event)">11</div>
+    <div class="box" onclick="clickMe(event)">12</div>
+
+    <div class="box" onclick="clickMe(event)">13</div>
+    <div class="box" onclick="clickMe(event)">14</div>
+    <div class="box" onclick="clickMe(event)">15</div>
+    <div class="box" onclick="clickMe(event)">16</div>
+  </div>
+
+  <script>
+  function clickMe(event) {
+     box = event.target;
+    if (box.classList.contains("redbox")) {
+      box.classList.remove("redbox");
+    } else {
+      box.classList.add("redbox");
+    }
+  }
+  </script>
+</body>
+</html>

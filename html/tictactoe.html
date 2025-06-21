@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <style>
+     body {
+      height: 100vh;
+      background-color: #1abc9c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+     .board {
+      width: 306px;
+      height: 306px;
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      background-color: #1abc9c;
+    }
+
+      .cell {
+     width: 100px;
+     height: 100px;
+      background-color: transparent;
+     border: 2px solid transparent;
+     cursor: pointer;
+     font-size: 100px;
+     color: #119c88;             
+      display: flex;               
+     align-items: center;        
+     justify-content: center;     
+}
+     .cell:nth-child(4),
+    .cell:nth-child(5),
+    .cell:nth-child(6) {
+      border-top: 10px solid #119c88;
+    }
+
+    .cell:nth-child(7),
+    .cell:nth-child(8),
+    .cell:nth-child(9) {
+      border-top: 10px solid #119c88;
+    }
+     .cell:nth-child(2),
+    .cell:nth-child(5),
+    .cell:nth-child(8) {
+      border-left: 10px solid #119c88;
+    }
+
+    .cell:nth-child(3),
+    .cell:nth-child(6),
+    .cell:nth-child(9) {
+      border-left: 10px solid #119c88;
+    }
+    #info {
+      text-align: center;
+      color: white;
+      margin-bottom: 10px;
+    }
+     .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+    
+ <div class="container">
+    <div id="info">
+      <div id="players">Player 1 (X) vs Player 2 (O)</div>
+      <div id="status"></div>
+    </div>
+
+  <div class="board" id="board">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+  <script>
+     const cells = document.querySelectorAll('.cell');
+     statusText = document.getElementById('status');
+     playersText = document.getElementById('players');
+     let currentPlayer = Math.random() < 0.5 ? 'X' : 'O';
+     let board = Array(9).fill(null);
+     let gameOver = false;
+    
+     function updateStatus() {
+      if (!gameOver) {
+        statusText.textContent = `Player ${currentPlayer}'s turn`;
+      }
+    }
+      updateStatus()
+
+      
+  function handleClick(cell) {
+
+   let index;
+   for (let i = 0; i < 9; i++) {
+   if (cells[i] == cell) {
+    index = i;
+    break;
+  }
+}
+
+   if (board[index] || gameOver) return;
+
+   board[index] = currentPlayer;
+   cell.textContent = currentPlayer;
+
+   if (checkWin()) {
+    statusText.textContent = `Player ${currentPlayer} wins!`;
+    gameOver = true;
+    return;
+  }
+
+   let isDraw = true;
+   for (let i = 0; i < 9; i++) {
+   if (board[i] == null) {
+    isDraw = false;
+    break;
+  }
+}
+
+ if (isDraw) {
+  statusText.textContent = "It's a draw!";
+  gameOver = true;
+  return;
+}
+
+
+
+ 
+
+  currentPlayer = currentPlayer == "X" ? "O" : "X";
+  updateStatus();
+}
+     function checkWin() {
+     winPatterns = [
+     [0, 1, 2],
+     [3, 4, 5],
+     [6, 7, 8],
+     [0, 3, 6],
+     [1, 4, 7],
+     [2, 5, 8],
+     [0, 4, 8],
+     [2, 4, 6]];
+
+     for (let i = 0; i < 8; i++) {
+     let pattern = winPatterns[i];     
+     let a = pattern[0];               
+     let b = pattern[1];               
+     let c = pattern[2];               
+
+     if (board[a] != null && board[a] == board[b] && board[a] == board[c]) {
+      return true;
+    }
+  }
+
+   return false;
+}
+
+
+
+ for (let i = 0; i < 9; i++) {
+  const cell = document.querySelector(`.cell:nth-child(${i + 1})`);
+  cell.onclick = () => handleClick(cell);
+}
+
+  </script>
+</body>
+</html>

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PrimeRec",
+            "request": "launch",
+            "mainClass": "PrimeRec",
+            "projectName": "Hozzy_8a6d8245"
+        },
+        {
+            "type": "java",
+            "name": "FactorsRec",
+            "request": "launch",
+            "mainClass": "FactorsRec",
+            "projectName": "Hozzy_8a6d8245"
+        },
+        {
+            "type": "java",
+            "name": "DateCheck",
+            "request": "launch",
+            "mainClass": "DateCheck",
+            "projectName": "Hozzy_8a6d8245"
+        },
+        {
+            "type": "java",
             "name": "DateHybrid",
             "request": "launch",
             "mainClass": "DateHybrid",
