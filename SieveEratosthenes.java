@@ -13,7 +13,7 @@ public class SieveEratosthenes {
         }
 
         int arr[] = new int[num - 1];
-        for (i = 0; i < (int)Math.sqrt(num - 1); i++) {
+        for (i = 0; i < num-1; i++) {
             arr[i] = value;
             value++;
         }

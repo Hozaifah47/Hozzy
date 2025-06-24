@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinarySearchD",
+            "request": "launch",
+            "mainClass": "BinarySearchD",
+            "projectName": "Hozzy_ac19d146"
+        },
+        {
+            "type": "java",
+            "name": "SieveEratosthenes",
+            "request": "launch",
+            "mainClass": "SieveEratosthenes",
+            "projectName": "Hozzy_ac19d146"
+        },
+        {
+            "type": "java",
+            "name": "kaprekar",
+            "request": "launch",
+            "mainClass": "kaprekar",
+            "projectName": "Hozzy_ac19d146"
+        },
+        {
+            "type": "java",
             "name": "PrimeRec",
             "request": "launch",
             "mainClass": "PrimeRec",
