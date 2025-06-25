@@ -1,335 +1,336 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "SortRec",
-            "request": "launch",
-            "mainClass": "SortRec",
-            "projectName": "Hozzy_ac19d146"
-        },
-        {
-            "type": "java",
-            "name": "BinarySearchD",
-            "request": "launch",
-            "mainClass": "BinarySearchD",
-            "projectName": "Hozzy_ac19d146"
-        },
-        {
-            "type": "java",
-            "name": "SieveEratosthenes",
-            "request": "launch",
-            "mainClass": "SieveEratosthenes",
-            "projectName": "Hozzy_ac19d146"
-        },
-        {
-            "type": "java",
-            "name": "kaprekar",
-            "request": "launch",
-            "mainClass": "kaprekar",
-            "projectName": "Hozzy_ac19d146"
-        },
-        {
-            "type": "java",
-            "name": "PrimeRec",
-            "request": "launch",
-            "mainClass": "PrimeRec",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "FactorsRec",
-            "request": "launch",
-            "mainClass": "FactorsRec",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "DateCheck",
-            "request": "launch",
-            "mainClass": "DateCheck",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "DateHybrid",
-            "request": "launch",
-            "mainClass": "DateHybrid",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "dateintersect",
-            "request": "launch",
-            "mainClass": "dateintersect",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "name": "Java",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "jdkPath": "${env:JAVA_HOME}/bin",
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasenameNoExtension}",
-            "classpath": [
-                ".",
-                "${fileDirname}"
-            ]
-        },
-        {
-            "name": "Java Console App",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "jdkPath": "${env:JAVA_HOME}/bin",
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasenameNoExtension}",
-            "classpath": [
-                ".",
-                "${fileDirname}"
-            ],
-            "externalConsole": true
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "BinarySearchD",
-            "request": "launch",
-            "mainClass": "BinarySearchD",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "CircleIntersect",
-            "request": "launch",
-            "mainClass": "CircleIntersect",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "CocktailSort",
-            "request": "launch",
-            "mainClass": "CocktailSort",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "CombSort",
-            "request": "launch",
-            "mainClass": "CombSort",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "CountR",
-            "request": "launch",
-            "mainClass": "CountR",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "DateRange",
-            "request": "launch",
-            "mainClass": "DateRange",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Diagonals",
-            "request": "launch",
-            "mainClass": "Diagonals",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "EachRowColumn",
-            "request": "launch",
-            "mainClass": "EachRowColumn",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "FacinatingNum",
-            "request": "launch",
-            "mainClass": "FacinatingNum",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Initials",
-            "request": "launch",
-            "mainClass": "Initials",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Initials2",
-            "request": "launch",
-            "mainClass": "Initials2",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "MarkSort",
-            "request": "launch",
-            "mainClass": "MarkSort",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "MarksSort",
-            "request": "launch",
-            "mainClass": "MarksSort",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "MatrixMultiply",
-            "request": "launch",
-            "mainClass": "MatrixMultiply",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "MatrixSum",
-            "request": "launch",
-            "mainClass": "MatrixSum",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "MorseD",
-            "request": "launch",
-            "mainClass": "MorseD",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Number",
-            "request": "launch",
-            "mainClass": "Number",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Number1",
-            "request": "launch",
-            "mainClass": "Number1",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Prime",
-            "request": "launch",
-            "mainClass": "Prime",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Primes",
-            "request": "launch",
-            "mainClass": "Primes",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "QuickPrime",
-            "request": "launch",
-            "mainClass": "QuickPrime",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Rectangle",
-            "request": "launch",
-            "mainClass": "Rectangle",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "RemoveDigit",
-            "request": "launch",
-            "mainClass": "RemoveDigit",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "ReverseWordsWithoutSplit",
-            "request": "launch",
-            "mainClass": "ReverseWordsWithoutSplit",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Sentence",
-            "request": "launch",
-            "mainClass": "Sentence",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Sentence2",
-            "request": "launch",
-            "mainClass": "Sentence2",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "SentenceTwo",
-            "request": "launch",
-            "mainClass": "SentenceTwo",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "SieveEratosthenes",
-            "request": "launch",
-            "mainClass": "SieveEratosthenes",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Student",
-            "request": "launch",
-            "mainClass": "Student",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "StudentSort",
-            "request": "launch",
-            "mainClass": "StudentSort",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "Wordle",
-            "request": "launch",
-            "mainClass": "Wordle",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "WordleMonocrome",
-            "request": "launch",
-            "mainClass": "WordleMonocrome",
-            "projectName": "Hozzy_8a6d8245"
-        },
-        {
-            "type": "java",
-            "name": "kaprekar",
-            "request": "launch",
-            "mainClass": "kaprekar",
-            "projectName": "Hozzy_8a6d8245"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "RevRecString",
+      "request": "launch",
+      "mainClass": "RevRecString",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "SortRec",
+      "request": "launch",
+      "mainClass": "SortRec",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearchD",
+      "request": "launch",
+      "mainClass": "BinarySearchD",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "SieveEratosthenes",
+      "request": "launch",
+      "mainClass": "SieveEratosthenes",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "kaprekar",
+      "request": "launch",
+      "mainClass": "kaprekar",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "PrimeRec",
+      "request": "launch",
+      "mainClass": "PrimeRec",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "FactorsRec",
+      "request": "launch",
+      "mainClass": "FactorsRec",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "DateCheck",
+      "request": "launch",
+      "mainClass": "DateCheck",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "DateHybrid",
+      "request": "launch",
+      "mainClass": "DateHybrid",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "dateintersect",
+      "request": "launch",
+      "mainClass": "dateintersect",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "name": "Java",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+      "classpath": [".", "${fileDirname}"]
+    },
+    {
+      "name": "Java Console App",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+      "classpath": [".", "${fileDirname}"],
+      "externalConsole": true
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearchD",
+      "request": "launch",
+      "mainClass": "BinarySearchD",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "CircleIntersect",
+      "request": "launch",
+      "mainClass": "CircleIntersect",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "CocktailSort",
+      "request": "launch",
+      "mainClass": "CocktailSort",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "CombSort",
+      "request": "launch",
+      "mainClass": "CombSort",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "CountR",
+      "request": "launch",
+      "mainClass": "CountR",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "DateRange",
+      "request": "launch",
+      "mainClass": "DateRange",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Diagonals",
+      "request": "launch",
+      "mainClass": "Diagonals",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "EachRowColumn",
+      "request": "launch",
+      "mainClass": "EachRowColumn",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "FacinatingNum",
+      "request": "launch",
+      "mainClass": "FacinatingNum",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Initials",
+      "request": "launch",
+      "mainClass": "Initials",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Initials2",
+      "request": "launch",
+      "mainClass": "Initials2",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "MarkSort",
+      "request": "launch",
+      "mainClass": "MarkSort",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "MarksSort",
+      "request": "launch",
+      "mainClass": "MarksSort",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "MatrixMultiply",
+      "request": "launch",
+      "mainClass": "MatrixMultiply",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "MatrixSum",
+      "request": "launch",
+      "mainClass": "MatrixSum",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "MorseD",
+      "request": "launch",
+      "mainClass": "MorseD",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Number",
+      "request": "launch",
+      "mainClass": "Number",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Number1",
+      "request": "launch",
+      "mainClass": "Number1",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Prime",
+      "request": "launch",
+      "mainClass": "Prime",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Primes",
+      "request": "launch",
+      "mainClass": "Primes",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "QuickPrime",
+      "request": "launch",
+      "mainClass": "QuickPrime",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Rectangle",
+      "request": "launch",
+      "mainClass": "Rectangle",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "RemoveDigit",
+      "request": "launch",
+      "mainClass": "RemoveDigit",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "ReverseWordsWithoutSplit",
+      "request": "launch",
+      "mainClass": "ReverseWordsWithoutSplit",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Sentence",
+      "request": "launch",
+      "mainClass": "Sentence",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Sentence2",
+      "request": "launch",
+      "mainClass": "Sentence2",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "SentenceTwo",
+      "request": "launch",
+      "mainClass": "SentenceTwo",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "SieveEratosthenes",
+      "request": "launch",
+      "mainClass": "SieveEratosthenes",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Student",
+      "request": "launch",
+      "mainClass": "Student",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "StudentSort",
+      "request": "launch",
+      "mainClass": "StudentSort",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "Wordle",
+      "request": "launch",
+      "mainClass": "Wordle",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "WordleMonocrome",
+      "request": "launch",
+      "mainClass": "WordleMonocrome",
+      "projectName": "Hozzy_8a6d8245"
+    },
+    {
+      "type": "java",
+      "name": "kaprekar",
+      "request": "launch",
+      "mainClass": "kaprekar",
+      "projectName": "Hozzy_8a6d8245"
+    }
+  ]
 }
