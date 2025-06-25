@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SortRec",
+            "request": "launch",
+            "mainClass": "SortRec",
+            "projectName": "Hozzy_ac19d146"
+        },
+        {
+            "type": "java",
             "name": "BinarySearchD",
             "request": "launch",
             "mainClass": "BinarySearchD",
