@@ -1,10 +1,6 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true,
-    "editor.linkedEditing": true,
-    "editor.formatOnSave": false,
+  "java.debug.settings.onBuildFailureProceed": true,
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
-   
-  
-
-
 }
