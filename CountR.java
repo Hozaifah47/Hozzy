@@ -18,14 +18,14 @@ public class CountR {
         i = 0;
 
         while (i < size || index < size) {
-            if (i < size) {
+            if (i <size) {
                 count[arr[i]]++;
                 i++;
             } else if (value < 101 && count[value] > 0) {
                 arr[index++] = value;
                 count[value]--;
             } else {
-                value++;
+                    value++;
             }
         }
         System.out.println("Sorted array!");

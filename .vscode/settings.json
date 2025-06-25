@@ -1,6 +1,12 @@
 {
   "java.debug.settings.onBuildFailureProceed": true,
   "editor.linkedEditing": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "java.format.settings.url": "eclipse-formatter.xml",
+
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }
