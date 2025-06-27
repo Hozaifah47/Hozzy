@@ -47,7 +47,7 @@ class Exponents {
 class Binary {
     String getBinary(int n) {
         if (n == 0) {
-            return "";
+            return "0";
         }
         return getBinary(n / 2) + (n % 2);
     }
