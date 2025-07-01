@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Combinations",
+      "request": "launch",
+      "mainClass": "Combinations",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "RecWord",
+      "request": "launch",
+      "mainClass": "RecWord",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "RevRecString",
       "request": "launch",
       "mainClass": "RevRecString",
