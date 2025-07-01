@@ -22,12 +22,12 @@ class GetRecWord {
 
         }
         char ch;
-        for(int i =0;i<word.length();i++){
-            ch= word.charAt(i);
-            
+        String change;
+        for (int i = 0; i < word.length(); i++) {
+            ch = word.charAt(i);
+            change = word.substring(0, i) + word.substring(i + 1);
+            printWord(change, permutation + ch);
         }
-        
-        printWord(, permutation);
 
     }
 }
