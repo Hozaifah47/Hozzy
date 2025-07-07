@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CountR",
+      "request": "launch",
+      "mainClass": "CountR",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "snippet",
+      "request": "launch",
+      "mainClass": "snippet",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "Combinations",
       "request": "launch",
       "mainClass": "Combinations",
