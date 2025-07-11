@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestFib",
+      "request": "launch",
+      "mainClass": "TestFib",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "CountR",
       "request": "launch",
       "mainClass": "CountR",
