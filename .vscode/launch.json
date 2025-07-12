@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MineSweeper",
+      "request": "launch",
+      "mainClass": "MineSweeper",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "TestFib",
       "request": "launch",
       "mainClass": "TestFib",
