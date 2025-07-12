@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BalancingNum",
+      "request": "launch",
+      "mainClass": "BalancingNum",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "MineSweeper",
       "request": "launch",
       "mainClass": "MineSweeper",
