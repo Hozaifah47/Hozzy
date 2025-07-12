@@ -17,7 +17,7 @@ public class BalancingNum {
         }
 
         for (i = 1; i <= 1000000; i++) {
-            if (ob.isBalnum(i)) {
+            if (ob.isBalancingNum(i)) {
                 System.out.println(i);
             }
         }
@@ -36,6 +36,17 @@ public class BalancingNum {
 
         }
         return false;
+    }
+
+    boolean isBalancingNum(int num) {
+        int left, right;
+        left = (num * (num - 1)) / 2;
+        right = (int) Math.sqrt(1 + 8 * num * num);
+        if (left == right) {
+            return true;
+        }
+        return false;
+
     }
 
 }

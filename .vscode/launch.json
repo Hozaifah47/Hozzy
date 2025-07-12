@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Combinations$test",
+      "request": "launch",
+      "mainClass": "Combinations$test",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "BalancingNum",
       "request": "launch",
       "mainClass": "BalancingNum",
