@@ -8,7 +8,7 @@ class MineSweeper {
 
     public String[][] minesAssigner(String[][] grid) {
         int i = 0, row, column;
-        while (i < 10) {
+        while (i < 20) {
             row = randomIndex(0, 8);
             column = randomIndex(0, 8);
             if (!grid[row][column].equals("X")) { // Check for overlap
@@ -22,8 +22,8 @@ class MineSweeper {
     public static String[][] openBox(String[][] grid) {
         int i, j;
         int number;
-        for (i = 0; i < 9; i++) {
-            for (j = 0; j < 9; j++) {
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
                 number = 0;
 
                 if (grid[i][j].equals("X")) {
@@ -52,7 +52,7 @@ class MineSweeper {
     }
 
     public static boolean validCoord(String[][] grid, int x, int y) {
-        if (x >= 9 || y >= 9 || x < 0 || y < 0) {
+        if (x >= 10 || y >= 10 || x < 0 || y < 0) {
             return false;
         }
         return true;
@@ -60,36 +60,35 @@ class MineSweeper {
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        String[][] grid = new String[9][9];
-        // int coord[] = new int[2];
+        String[][] grid = new String[10][10];
         int i, j;
-        for (i = 0; i < 9; i++) {
-            for (j = 0; j < 9; j++) {
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
                 grid[i][j] = "1";
             }
         }
         MineSweeper ob = new MineSweeper();
         ob.minesAssigner(grid);
         System.out.println("Mines Assigned -->");
-        for (i = 0; i < 9; i++) {
-            for (j = 0; j < 9; j++) {
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
                 System.out.print(grid[i][j] + "   ");
             }
             System.out.println();
         }
         System.out.println("Enter coordinates to open");
-        System.out.println("x:");
+        System.out.print("X:");
         int x = sc.nextInt();
-        System.out.println("y:");
+        System.out.print("Y:");
         int y = sc.nextInt();
-        if (x >= 9 || y >= 9 || x < 0 || y < 0 || (grid[x][y] == "X")) {
-            System.out.println("invalid coords");
+        if (x >= 10 || y >= 10 || x < 0 || y < 0 || (grid[x][y] == "X")) {
+            System.out.println("Invalid coords");
             return;
 
         }
         openBox(grid);
-        for (i = 0; i < 9; i++) {
-            for (j = 0; j < 9; j++) {
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
                 System.out.print(grid[i][j] + "   ");
             }
             System.out.println();
