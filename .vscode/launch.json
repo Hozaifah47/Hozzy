@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SudokuCheck",
+      "request": "launch",
+      "mainClass": "SudokuCheck",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "sudokuCheck",
+      "request": "launch",
+      "mainClass": "sudokuCheck",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "UniqueSentance",
       "request": "launch",
       "mainClass": "UniqueSentance",
