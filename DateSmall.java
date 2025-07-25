@@ -26,14 +26,14 @@ class DateSmall {
 
         if (result == -1) {
 
-            System.out.println("First date is smaller then the second date.");
+            System.out.println("First date is smaller than the second date.");
 
         } else if (result == 0) {
 
             System.out.println("First date is equal to the second date.");
         } else {
 
-            System.out.println("First date is bigger then the second date");
+            System.out.println("First date is bigger than the second date");
         }
 
     }
