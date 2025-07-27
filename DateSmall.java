@@ -4,36 +4,29 @@ class DateSmall {
 
     public static void main(String args[]) {
 
-        String date1, date2;
+        String date1, date2, date3, date4;
+        ;
         int result;
         DateSmall ob = new DateSmall();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the first date (Format : DD/MM/YYYY)");
+        System.out.println("Enter the first date of first range (Format : DD/MM/YYYY)");
         date1 = sc.nextLine();
-        System.out.println("Enter the second date (Format : DD/MM/YYYY)");
+        System.out.println("Enter the second date of first range (Format : DD/MM/YYYY)");
         date2 = sc.nextLine();
+        System.out.println("Enter the first date of second range (Format : DD/MM/YYYY)");
+        date3 = sc.nextLine();
+        System.out.println("Enter the second date of second range (Format : DD/MM/YYYY)");
+        date4 = sc.nextLine();
 
         int[] d1 = ob.isValidDate(date1);
         int[] d2 = ob.isValidDate(date2);
+        int[] d3 = ob.isValidDate(date3);
+        int[] d4 = ob.isValidDate(date4);
 
-        if (d1[0] == 0 || d2[0] == 0) {
+        if (d1[0] == 0 || d2[0] == 0 || d3[0] == 0 || d4[0] == 0) {
 
             System.out.println("Invalid input!");
             return;
-        }
-
-        result = ob.isSmaller(d1, d2);
-
-        if (result == -1) {
-
-            System.out.println("First date is smaller than the second date.");
-
-        } else if (result == 0) {
-
-            System.out.println("First date is equal to the second date.");
-        } else {
-
-            System.out.println("First date is bigger than the second date");
         }
 
     }
