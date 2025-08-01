@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MineSweep",
+      "request": "launch",
+      "mainClass": "MineSweep",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "MineSweeperNew",
+      "request": "launch",
+      "mainClass": "MineSweeperNew",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "DateSmall",
       "request": "launch",
       "mainClass": "DateSmall",
