@@ -9,7 +9,6 @@ public class MineSweep {
         char ghost[][] = new char[10][10];
         int i, j, x, y, row, col;
         int m = 1, c = 0;
-        boolean flag = true;
 
         grid = ob.getGrid(grid);
         ghost = grid;
@@ -56,7 +55,6 @@ public class MineSweep {
                 }
 
                 if (ghost[row][col] == 'm') {
-                    m++;
 
                     ghost[row][col] = 'c';
 
@@ -107,7 +105,7 @@ public class MineSweep {
             row = i / 10;
             col = i % 10;
             if (grid[row][col] != 'X') {
-                grid[row][col] = '1';
+                grid[row][col] = checkPoint(grid, row, col);
             }
 
         }
@@ -117,24 +115,24 @@ public class MineSweep {
 
     char checkPoint(char grid[][], int x, int y) {
 
-        int count = 0;
+        char count = '0';
         if (x - 1 >= 0 && y - 1 >= 0 && grid[x - 1][y - 1] == 'X')
-            count++;
+            return '1';
         if (x - 1 >= 0 && grid[x - 1][y] == 'X')
-            count++;
+            return '1';
         if (x - 1 >= 0 && y + 1 < 10 && grid[x - 1][y + 1] == 'X')
-            count++;
+            return '1';
         if (y - 1 >= 0 && grid[x][y - 1] == 'X')
-            count++;
+            return '1';
         if (x + 1 < 10 && y - 1 >= 0 && grid[x + 1][y - 1] == 'X')
-            count++;
+            return '1';
         if (x + 1 < 10 && grid[x + 1][y] == 'X')
-            count++;
+            return '1';
         if (x + 1 < 10 && y + 1 < 10 && grid[x + 1][y + 1] == 'X')
-            count++;
+            return '1';
         if (y + 1 < 10 && grid[x][y + 1] == 'X')
-            count++;
+            return '1';
 
-        return (char) ('0' + count);
+        return count;
     }
 }
