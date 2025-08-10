@@ -69,6 +69,7 @@ class MazeRec {
             }
             System.out.println();
         }
+        System.out.println("-------------------------");
 
         ob.recMaze(grid, ghost, i, j);
 
@@ -103,6 +104,8 @@ class MazeRec {
 
     void printPath(int[][] grid, int[][] ghost) {
         int r, c;
+
+        System.out.println("Path found !");
         for (r = 0; r < grid.length; r++) {
             for (c = 0; c < grid[0].length; c++) {
                 if (grid[r][c] == 2) {
