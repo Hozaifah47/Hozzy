@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MazeRec",
+      "request": "launch",
+      "mainClass": "MazeRec",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "MineSweeperRec",
       "request": "launch",
       "mainClass": "MineSweeperRec",

@@ -72,7 +72,7 @@ public class MineSweep {
                         ghost[x + 1][y] = 'm';
                     if (x + 1 < 10 && y + 1 < 10 && grid[x + 1][y + 1] == '0')
                         ghost[x + 1][y + 1] = 'm';
-                    if (y + 1 < 10 && grid[x][y + 1] == 'X')
+                    if (x - 1 >= 0 && grid[x - 1][y] == 'X')
                         ghost[x][y + 1] = 'm';
 
                 }
