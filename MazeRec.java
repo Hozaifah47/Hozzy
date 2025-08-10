@@ -3,13 +3,29 @@ import java.util.*;
 class MazeRec {
     public static void main(String args[]) {
 
-        int grid[][] = new int[10][10];
-        int i, j;
+        int i, j, r, c;
 
         MazeRec ob = new MazeRec();
         Scanner sc = new Scanner(System.in);
-        for (i = 0; i < 10; i++) {
-            for (j = 0; j < 10; j++) {
+        System.out.println("Enter the number of rows");
+        r = sc.nextInt();
+        if (r < 1) {
+            System.out.println("Invalid input!");
+            return;
+
+        }
+        System.out.println("Enter the number of columns");
+        c = sc.nextInt();
+        if (c < 1) {
+            System.out.println("Invalid input!");
+            return;
+
+        }
+        int[][] ghost = new int[r][c];
+        int[][] grid = new int[r][c];
+
+        for (i = 0; i < r; i++) {
+            for (j = 0; j < c; j++) {
                 System.out
                         .println("Enter  *0 for path 1 for block* for (Row :" + (i + 1) + " Column :" + (j + 1) + " )");
                 grid[i][j] = sc.nextInt();
@@ -45,14 +61,15 @@ class MazeRec {
 
         }
         grid[i][j] = 2;
+
         System.out.println("Initial grid!");
-        for (int r = 0; i < 10; i++) {
-            for (int c = 0; j < 10; i++) {
+        for (r = 0; r < grid.length; r++) {
+            for (c = 0; c < grid[0].length; c++) {
                 System.out.print(" " + grid[r][c] + " ");
             }
             System.out.println();
         }
-        int[][] ghost = new int[10][10];
+
         ob.recMaze(grid, ghost, i, j);
 
     }
@@ -85,8 +102,9 @@ class MazeRec {
     }
 
     void printPath(int[][] grid, int[][] ghost) {
-        for (int r = 0; r < grid.length; r++) {
-            for (int c = 0; c < grid[0].length; c++) {
+        int r, c;
+        for (r = 0; r < grid.length; r++) {
+            for (c = 0; c < grid[0].length; c++) {
                 if (grid[r][c] == 2) {
                     System.out.print(" 2 ");
                 } else if (grid[r][c] == 3) {
