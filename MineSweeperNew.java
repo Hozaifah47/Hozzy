@@ -116,5 +116,4 @@ class MineSweeperNew {
 
     }
 
-    boolean Marker()
 }

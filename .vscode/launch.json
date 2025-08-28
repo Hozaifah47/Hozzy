@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MazeGen",
+      "request": "launch",
+      "mainClass": "MazeGen",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "MazeGenerator",
+      "request": "launch",
+      "mainClass": "MazeGenerator",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "ExceptionTest",
+      "request": "launch",
+      "mainClass": "ExceptionTest",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "MazeRec",
       "request": "launch",
       "mainClass": "MazeRec",
