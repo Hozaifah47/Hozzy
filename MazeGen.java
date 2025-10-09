@@ -61,9 +61,9 @@ class MazeGen {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int r, c, sx, sy, ex, ey, i, j;
-        // System.out.println("Enter rows");
+        System.out.println("Enter rows");
         r = 10;
-        // System.out.println("Enter columns");
+        System.out.println("Enter columns");
         c = 10;
         int ghost[][] = new int[r][c];
         while (true) {

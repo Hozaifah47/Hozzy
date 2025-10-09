@@ -32,59 +32,32 @@ public class MazeGenerator {
             }
             System.out.println();
         }
-        while (grid[x][y] != 3) {
-            int random = (int) ((Math.random() * 4 + 1));
-            // System.out.println(random);
-            switch (random) {
-                case 1:
-
-                    if (isValid(x, y - 1) && grid[x][y - 1] != 4) {
-                        System.out.println(random);
-                        grid[x][y - 1] = 4;
-                        y = y - 1;
-                    }
-                    break;
-                case 2:
-
-                    if (isValid(x - 1, y) && grid[x - 1][y] != 4) {
-                        System.out.println(random);
-                        grid[x - 1][y] = 4;
-                        x = x - 1;
-                    }
-                    break;
-                case 3:
-
-                    if (isValid(x, y + 1) && grid[x][y + 1] != 4) {
-                        System.out.println(random);
-                        grid[x][y + 1] = 4;
-                        y = y + 1;
-                    }
-                    break;
-                case 4:
-                    if (isValid(x + 1, y) && grid[x + 1][y] != 4) {
-                        System.out.println(random);
-                        grid[x + 1][y] = 4;
-                        x = x + 1;
-                    }
-                    break;
-            }
-        }
-        for (i = 0; i < r; i++) {
-            for (j = 0; j < c; j++) {
-                System.out.print(" " + grid[i][j] + " ");
-
-            }
-            System.out.println();
-        }
-
     }
 
-    static int[][] isValid(int x, int y) {
-        int coords[][]=new int[4][2];
-        int count;
-        if()
-        
+    static void pathFind(int cx, int cy, int px, int py) {
+        if (cx < 0 || cy < 0 || cx >= grid.length || cy >= grid[0].length) {
+            return;
+        } // && is adjecent
+        if (grid[cx][cy] == 4) {
+            return;
 
+        }
+        if (grid[cx][cy] == 3) {
+
+            System.out.println("Path found !");
+            for (int r = 0; r < grid.length; r++) {
+                for (int c = 0; c < grid[0].length; c++) {
+                    System.out.print(" " + grid[r][c] + " ");
+                }
+                System.out.println();
+            }
+        }
+        grid[px][py] = 4;
+        if (cy - 1 != py && cx != px) {
+
+            pathFind(cx, cy - 1, cx, cy);
+
+        }
 
     }
 }

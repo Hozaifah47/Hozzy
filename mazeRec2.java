@@ -164,8 +164,6 @@ class MazeRec {
         }
         ghost[x][y] = 4;
 
-        ghost[x][y] = 4;
-
         recMaze(x, y - 1);
         recMaze(x - 1, y);
         recMaze(x, y + 1);
