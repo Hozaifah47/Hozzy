@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StackedQueue",
+      "request": "launch",
+      "mainClass": "StackedQueue",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "MazeGen",
       "request": "launch",
       "mainClass": "MazeGen",
