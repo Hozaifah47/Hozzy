@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "test2",
+      "request": "launch",
+      "mainClass": "test2",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
+      "name": "StudentList",
+      "request": "launch",
+      "mainClass": "StudentList",
+      "projectName": "Hozzy_ac19d146"
+    },
+    {
+      "type": "java",
       "name": "StackedQueue",
       "request": "launch",
       "mainClass": "StackedQueue",
