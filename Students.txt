@@ -1,0 +1,9 @@
+AB1234 Phys 67 Chem 87 Math 45 Atif Avg 66
+AB1234 Phys 87 Chem 56 Math 78 Atif Avg 73
+AB1234 Phys 67 Chem 87 Math 56 Atif Avg 70
+AB1234 Phys 67 Chem 67 Math 67 atif Avg 67
+AB1234 Phys 56 Chem 56 Math 56 Atif Avg 56
+AB1234 Phys 56 Chem 56 Math 56 atif Avg 56
+AB1234 Phys 67 Chem 67 Math 67 atif Avg 67
+AB1234 Phys 67 Chem 67 Math 67 Atif Avg 67
+AB1234 Phys 67 Chem 67 Math 67 Atif Avg 67
