@@ -3,6 +3,8 @@ import java.util.*;
 class MazeRec {
     static int[][] ghost;
     static int[][] grid;
+    static int min;
+    static int shortgrid[][];
 
     public static void main(String args[]) {
 
@@ -25,6 +27,8 @@ class MazeRec {
         }
         ghost = new int[r][c];
         grid = new int[r][c];
+        shortgrid = new int[r][c];
+        min = r * c;
 
         for (i = 0; i < r; i++) {
             for (j = 0; j < c; j++) {
@@ -106,43 +110,45 @@ class MazeRec {
         System.out.println("-------------------------");
 
         try {
-            recMaze(i, j, true);
+            recMaze(i, j, true, 0);
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
             return;
         }
+        System.out.println("Shortest path ! (Length : " + min + " )");
+        for (r = 0; r < grid.length; r++) {
+            for (c = 0; c < grid[0].length; c++) {
+                if (grid[r][c] == 2) {
+                    System.out.print(" 2 ");
+                } else if (grid[r][c] == 3) {
+                    System.out.print(" 3 ");
+                } else if (shortgrid[r][c] != 0) {
+                    System.out.print(" " + shortgrid[r][c] + " ");
+                } else {
+                    System.out.print(" " + grid[r][c] + " ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("-------------------------");
 
     }
 
-    static void recMaze(int x, int y, boolean check) throws Exception {
-
-        if (!check) {
-            int i, c, r, count = 0;
-
-            if (x < 1 || y < 1 || y >= grid[0].length || x >= grid.length) {
-                throw new Exception(" Invalid! ( points are not valid )");
-
-            }
-
-            for (i = 0; i < 100; i++) {
-                r = i / 10;
-                c = i % 10;
-                if (grid[r][c] == 3 || grid[r][c] == 2) {
-                    count += 1;
-
-                }
-
-            }
-            if (count != 2) {
-                throw new Exception(" Invalid! ( end/start are not valid )");
-
-            }
-
-        }
+    static void recMaze(int x, int y, boolean check, int path) throws Exception {
 
         if (grid[x][y] == 3) {
             ghost[x][y] = 3;
             int r, c;
+            if (path < min) {
+                min = path;
+                shortgrid = ghost;
+                for (r = 0; r < grid.length; r++) {
+                    for (c = 0; c < grid[0].length; c++) {
+                        shortgrid[r][c] = ghost[r][c];
+                    }
+                }
+
+            }
             System.out.println("Path found !");
             for (r = 0; r < grid.length; r++) {
                 for (c = 0; c < grid[0].length; c++) {
@@ -166,16 +172,16 @@ class MazeRec {
         ghost[x][y] = 4;
 
         if (y - 1 >= 0 && (grid[x][y - 1] == 0 || grid[x][y - 1] == 3) && ghost[x][y - 1] == 0) {
-            recMaze(x, y - 1, true);
+            recMaze(x, y - 1, true, ++path);
         }
         if (x - 1 >= 0 && (grid[x - 1][y] == 0 || grid[x - 1][y] == 3) && ghost[x - 1][y] == 0) {
-            recMaze(x - 1, y, true);
+            recMaze(x - 1, y, true, ++path);
         }
         if (y + 1 < grid[0].length && (grid[x][y + 1] == 0 || grid[x][y + 1] == 3) && ghost[x][y + 1] == 0) {
-            recMaze(x, y + 1, true);
+            recMaze(x, y + 1, true, ++path);
         }
         if (x + 1 < grid.length && (grid[x + 1][y] == 0 || grid[x + 1][y] == 3) && ghost[x + 1][y] == 0) {
-            recMaze(x + 1, y, true);
+            recMaze(x + 1, y, true, ++path);
         }
 
         ghost[x][y] = 0;
