@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HistogramArea",
+      "request": "launch",
+      "mainClass": "HistogramArea",
+      "projectName": "Hozzy_a7c46ad3"
+    },
+    {
+      "type": "java",
+      "name": "OccurWithSpace",
+      "request": "launch",
+      "mainClass": "OccurWithSpace",
+      "projectName": "Hozzy_a7c46ad3"
+    },
+    {
+      "type": "java",
+      "name": "Occurrence",
+      "request": "launch",
+      "mainClass": "Occurrence",
+      "projectName": "Hozzy_a7c46ad3"
+    },
+    {
+      "type": "java",
+      "name": "StudentList",
+      "request": "launch",
+      "mainClass": "StudentList",
+      "projectName": "Hozzy_a7c46ad3"
+    },
+    {
+      "type": "java",
       "name": "testidk",
       "request": "launch",
       "mainClass": "testidk",
